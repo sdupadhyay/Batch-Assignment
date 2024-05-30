@@ -24,7 +24,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
  `TypeScript`
  `Tailwind CSS`
 
-- For Static Side Generation Next Js is used.
+- For Static Side Generation getStaticProps and getStaticPath of Next Js is used.
 - For Responsive website Tailwind css is used.
   
  <a href="https://www.figma.com/community/file/882879599442878081/portfolio-ui-web-mobile">Figma Link</a>
