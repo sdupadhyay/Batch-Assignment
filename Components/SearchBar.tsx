@@ -7,10 +7,9 @@ export const SearchBar: React.FC<props> = ({ handleChange }): ReactElement => {
 		<div className="relative">
 			<input
 				type="text"
-				id="Search"
-				placeholder="Search...."
+				placeholder="Search Blog...."
 				className="w-full rounded-md border py-2.5 px-3 pe-10 shadow-sm sm:text-sm"
-				onChange={(e)=>handleChange(e)}
+				onChange={(e) => handleChange(e)}
 			/>
 		</div>
 	);

@@ -20,6 +20,12 @@ export const Navbar: React.FC<props> = ({ pageType }): ReactElement => {
 	useEffect(() => {
 		toogleTheme();
 	}, [theme]);
+	useEffect(() => {
+		const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+		if (darkThemeMq?.matches) {
+			setTheme("dark");
+		}
+	}, []);
 	const themeImage = (
 		<div>
 			{theme == "light" ? (

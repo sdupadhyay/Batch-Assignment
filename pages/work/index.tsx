@@ -27,9 +27,8 @@ export default function Work(props: any) {
 		</>
 	);
 }
-export async function getStaticProps(context: any) {
+export async function getStaticProps() {
 	try {
-		// const res = await fetch("http://localhost:3000/api/work");
 		const data = workPageData;
 		return {
 			props: {

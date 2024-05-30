@@ -22,7 +22,7 @@ export const Footer = () => {
 	];
 	return (
 		<>
-			<footer className="flex flex-col gap-3 pb-5">
+			<footer className="flex flex-col gap-3 py-10">
 				<ul className="flex gap-5 justify-center">
 					{footerData?.map((ele, ind) => (
 						<li key={ind}>

@@ -10,8 +10,8 @@ export default function Blog(props: any) {
 	const handleChange = (e: any) => {
 		let searchData = blogCardData?.filter(
 			(ele: any) =>
-				ele?.title?.toLowerCase().includes(e.target.value) ||
-				ele?.description?.toLowerCase()?.includes(e.target.value)
+				ele?.title?.toLowerCase().includes(e.target.value?.toLowerCase()) ||
+				ele?.description?.toLowerCase()?.includes(e.target.value?.toLowerCase())
 		);
 		setBlogData(searchData);
 	};
@@ -21,7 +21,7 @@ export default function Blog(props: any) {
 				<h1 className="font-bold text-sm md:text-xl text-[#21243D] dark:text-[#ffffff]">
 					Blog
 				</h1>
-				<div className="flex align-middle justify-center pb-10">
+				<div className="flex align-middle justify-center py-10">
 					<SearchBar handleChange={handleChange} />
 				</div>
 				<div>
