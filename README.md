@@ -16,7 +16,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
   - Search bar to filter Blog by title or content 
   - Static Site Generation (SSG)
   - Responsive Design
+  - Google font as per figma design
 
-For CSS Tailwind library is used. 
+#### Library and Frameworks used 
+ `Next JS`
+ `TypeScript`
+ `Tailwind CSS`
+
+- For Static Side Generation Next Js is used.
+- For Responsive website Tailwind css is used. 
 
  <a href="https://batch-blog-assignment.vercel.app/">Vercel Deployment Link</a>
