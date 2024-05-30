@@ -1,8 +1,10 @@
+import { MetaTitle } from "@/Components/MetaTitle";
 import Link from "next/link";
 
 const custom404 = () => {
 	return (
 		<>
+			<MetaTitle metaTitle={"404 Error"} />
 			<div className="grid h-screen place-content-center bg-white dark:bg-[#3d3d3d] px-4">
 				<div className="text-center">
 					<svg

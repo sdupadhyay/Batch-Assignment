@@ -1,4 +1,5 @@
 import { FeaturedWorkCard } from "@/Components/FeaturedWorkCard";
+import { MetaTitle } from "@/Components/MetaTitle";
 import { workPageData } from "@/Constants/Data";
 import { WorkPageType } from "@/Constants/pageType";
 
@@ -6,6 +7,7 @@ export default function Work(props: any) {
 	const { workPageData } = props;
 	return (
 		<>
+		<MetaTitle metaTitle="Work Page"/>
 			<div className="px-[15px] pt-[15px] pb-[50px]  md:px-[115px] md:pt-[100px] md:pb-[50px] ">
 				<h1 className="font-bold text-sm md:text-xl text-[#21243D] dark:text-[#ffffff]">
 					Work

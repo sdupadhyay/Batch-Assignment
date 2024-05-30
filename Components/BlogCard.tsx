@@ -27,7 +27,7 @@ export const BlogCard: React.FC<props> = ({
 						{createdAt}
 					</div>
 					<span className="border border-black"></span>
-					<span className="pl-9 text-[#21243D] dark:text-[#ffffff] text-lg">
+					<span className="pl-7 text-[#21243D] dark:text-[#ffffff] text-lg">
 						{tag}
 					</span>
 				</div>

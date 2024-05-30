@@ -1,3 +1,4 @@
+import { MetaTitle } from "@/Components/MetaTitle";
 import { Tag } from "@/Components/Tag";
 import { getWorkDetailPageData, workPageData } from "@/Constants/Data";
 import { WorkPageType } from "@/Constants/pageType";
@@ -9,6 +10,7 @@ export default function WorkDetailPage(props: any) {
 	//console.log(workDetailPageData)
 	return (
 		<>
+			<MetaTitle metaTitle={workDetailPageData[0]?.title} />
 			<div className="px-[15px] pt-[15px] pb-[50px]  md:px-[135px] md:pt-[130px] md:pb-[50px] dark:bg-blac flex gap-7 flex-col">
 				<h1 className="font-bold text-sm md:text-xl text-[#21243D] dark:text-[#ffffff]">
 					{workDetailPageData[0]?.heading}

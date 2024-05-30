@@ -1,5 +1,6 @@
 import { FeaturedWorkCard } from "@/Components/FeaturedWorkCard";
 import { HeroSection } from "@/Components/HeroSection";
+import { MetaTitle } from "@/Components/MetaTitle";
 import { RecentPost } from "@/Components/RecentPost";
 import { homePageData } from "@/Constants/Data";
 import { Inter } from "next/font/google";
@@ -10,6 +11,7 @@ export default function Home(props: any) {
 	const { recentPostData, featureWorkData } = props;
 	return (
 		<main>
+			<MetaTitle metaTitle="Home Page" />
 			<HeroSection />
 			<RecentPost blogData={recentPostData} />
 			<div className="px-[15px] pt-[15px] md:px-[115px] md:py-7">
