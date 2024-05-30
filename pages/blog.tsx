@@ -1,4 +1,5 @@
 import { BlogCard } from "@/Components/BlogCard";
+import { SearchBar } from "@/Components/SearchBar";
 import { blogPageData } from "@/Constants/Data";
 import { BlogPageType } from "@/Constants/pageType";
 import { useRef, useState } from "react";
@@ -21,15 +22,7 @@ export default function Blog(props: any) {
 					Blog
 				</h1>
 				<div className="flex align-middle justify-center pb-10">
-					<div className="relative">
-						<input
-							type="text"
-							id="Search"
-							placeholder="Search...."
-							className="w-full rounded-md border-gray-200 py-2.5 px-3 pe-10 shadow-sm sm:text-sm"
-							onChange={handleChange}
-						/>
-					</div>
+					<SearchBar handleChange={handleChange} />
 				</div>
 				<div>
 					{blogData?.map((ele: any, ind: any) => (

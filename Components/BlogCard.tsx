@@ -17,7 +17,7 @@ export const BlogCard: React.FC<props> = ({
 	return (
 		<>
 			<div
-				className={`bg-[#FFFFFF] dark:bg-[#3d3d3d] rounded flex flex-col gap-4  ${classes}`}
+				className={`bg-[#FFFFFF] dark:bg-[#3d3d3d]  rounded flex flex-col gap-4 hover:shadow-lg ${classes}`}
 			>
 				<h2 className="text-blogcardHeading text-[#21243D] dark:text-[#ffffff] font-bold">
 					{heading}

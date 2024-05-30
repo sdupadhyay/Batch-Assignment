@@ -8,14 +8,22 @@ export default function WorkDetailPage(props: any) {
 	//console.log(workDetailPageData)
 	return (
 		<>
-			<div className="px-[15px] pt-[15px] pb-[50px]  md:px-[135px] md:pt-[130px] md:pb-[50px] dark:bg-blac ">
+			<div className="px-[15px] pt-[15px] pb-[50px]  md:px-[135px] md:pt-[130px] md:pb-[50px] dark:bg-blac flex gap-4 flex-col">
 				<h1 className="font-bold text-sm md:text-xl text-[#21243D] dark:text-[#ffffff]">
 					{workDetailPageData[0]?.heading}
 				</h1>
-				<div>
-					<Tag />
+				<div className="flex gap-7">
+					<Tag
+						year={workDetailPageData[0]?.year}
+						backgroundColor={"bg-[#FF7C7C]"}
+					/>
+					<span className="text-[#8695A4] font-normal">
+						{workDetailPageData[0]?.tag}
+					</span>
 				</div>
-				<p>{workDetailPageData[0]?.description}</p>
+				<p className="text-[#21243D] dark:text-[#ffffff]">
+					{workDetailPageData[0]?.description}
+				</p>
 			</div>
 		</>
 	);

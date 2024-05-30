@@ -14,9 +14,15 @@ export const HeroSection = () => {
 						sint. Velit officia consequat duis enim velit mollit. Exercitation
 						veniam consequat sunt nostrud amet.
 					</p>
-					<button className="text-white w-fit py-2 px-4 rounded bg-[#FF6464]">
+					<a
+						className="text-white cursor-pointer w-fit py-2 px-4 rounded bg-[#FF6464]"
+						href={
+							"https://drive.google.com/file/d/0B8cF03TAa3TAc3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-wpGHqzTuXCx9zAtkwwR-nA"
+						}
+						target="_blank"
+					>
 						Download Resume
-					</button>
+					</a>
 				</div>
 				<div className="w-full md:w-2/4 flex justify-center items-center text-right pb-5 md:p-0">
 					<div>

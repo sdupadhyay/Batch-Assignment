@@ -1,7 +1,6 @@
 import { FeaturedWorkCard } from "@/Components/FeaturedWorkCard";
 import { workPageData } from "@/Constants/Data";
 import { WorkPageType } from "@/Constants/pageType";
-import { notFound } from "next/navigation";
 
 export default function Work(props: any) {
 	const { workPageData } = props;
@@ -20,6 +19,7 @@ export default function Work(props: any) {
 							tag={ele?.tag}
 							description={ele?.description}
 							id={ele?.id}
+							year={ele?.year}
 						/>
 					))}
 				</div>

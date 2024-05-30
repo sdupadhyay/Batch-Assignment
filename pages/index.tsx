@@ -22,6 +22,7 @@ export default function Home(props: any) {
 						tag={ele?.tag}
 						description={ele?.description}
 						id={ele?.id}
+						year={ele?.year}
 					/>
 				))}
 			</div>
@@ -29,8 +30,7 @@ export default function Home(props: any) {
 	);
 }
 export async function getStaticProps() {
-	//const res = await fetch("http://localhost:3000/api/home");
-	const data = homePageData
+	const data = homePageData;
 	return {
 		props: {
 			recentPostData: data["Recent-Post"] || [],

@@ -9,6 +9,7 @@ type props = {
 	tag: string;
 	description: string;
 	id: Number;
+	year: string;
 };
 export const FeaturedWorkCard: React.FC<props> = ({
 	image,
@@ -16,6 +17,7 @@ export const FeaturedWorkCard: React.FC<props> = ({
 	tag,
 	description,
 	id,
+	year,
 }): ReactElement => {
 	return (
 		<Link href={`/work/${id}`}>
@@ -34,7 +36,7 @@ export const FeaturedWorkCard: React.FC<props> = ({
 						{title}
 					</h2>
 					<div className="flex gap-7">
-						<Tag />
+						<Tag year={year} backgroundColor={"bg-[#142850]"} />
 						<span className="text-[#8695A4] font-normal">{tag}</span>
 					</div>
 					<p className="text-[#21243D] dark:text-[#ffffff]">{description}</p>
