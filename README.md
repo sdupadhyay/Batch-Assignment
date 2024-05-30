@@ -11,8 +11,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Project Structure and Description
   #### Features implemented in this project are listed below: 
-  - User System base theme
+  - User System base Theme
   - Dark and Light Theme toogle
+  - Infinite Loading of the blog cards (Limited to 50 cards)
   - Search bar to filter Blog by title or content 
   - Static Site Generation (SSG)
   - Responsive Design
