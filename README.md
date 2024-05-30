@@ -25,6 +25,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
  `Tailwind CSS`
 
 - For Static Side Generation Next Js is used.
-- For Responsive website Tailwind css is used. 
+- For Responsive website Tailwind css is used.
+  
+ <a href="https://www.figma.com/community/file/882879599442878081/portfolio-ui-web-mobile">Figma Link</a>
+
 
  <a href="https://batch-blog-assignment.vercel.app/">Vercel Deployment Link</a>
