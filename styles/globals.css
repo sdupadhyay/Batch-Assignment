@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+	font-family: "Heebo";
+}
+[data-them="light"] {
+	--text-prmimary: #21243d;
+}
+:root {
+	--text-primary-color: #21243d;
+}
